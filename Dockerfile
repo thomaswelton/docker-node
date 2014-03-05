@@ -4,7 +4,7 @@ MAINTAINER thomaswelton
 
 # GET NODE INSTALL DEPS
 RUN       apt-get update
-RUN       apt-get install -y build-essential python wget
+RUN       DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential python wget
 
 # NODE V0.10.26
 RUN       wget http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz
